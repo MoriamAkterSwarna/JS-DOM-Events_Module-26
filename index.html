@@ -1,24 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS DOM EVENTS</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- Video 26-1 start here -->
-    <h1 onclick="console.log('I am clicked')">DOM er ajke special events </h1>
+    <h1 onclick="console.log('I am clicked')">DOM er ajke special events</h1>
 
     <button title="This is a tooltip" onclick="console.log(8)">Click Me</button>
     <button onclick="console.log(70)">Another Button</button>
 
-    <!-- Video 26-1 end here -->
+    <!--* Video 26-1 end here -->
 
-    
+    <!--Video 26-2 Start Here  -->
+    <br />
+    <button onclick="document.body.style.backgroundColor='yellow'">
+      Make Yellow
+    </button>
+
+    <!-- Option 2 -->
+    <button onclick="makeRed()">Make Red</button>
+
+    <!-- Option 3 -->
+    <button id="make-blue">Make Blue</button>
+
+    <button id="make-purple">Make Purple</button>
+
+    <!-- <script>
+        function makeRed() {
+            document.body.style.backgroundColor = 'red';
+        }
+    </script> -->
+    <!-- <script>
+        const makeBlueBtn = document.getElementById('make-blue');
+        console.log(makeBlueBtn);
+
+        makeBlueBtn.onclick = makeBlue; 
+        function makeBlue() {
+            document.body.style.backgroundColor = 'blue';
+        }
+    </script> -->
+
+
+    <!-- <script>
+        const makePurpleBtn =document.getElementById('make-purple');
+        console.log(makePurpleBtn);
+
+       makePurpleBtn.onclick = function() {
+           document.body.style.backgroundColor = 'purple';
+       }
+
+    </script> -->
+
+    <!--* Video 26-1 end here -->
+
+
+
 
 
 
     <script src="./js/26-1_events.js"></script>
-</body>
+
+
+
+    <!--* For Video 26-2 script -->
+    <script src="./js/26-2_events.js"></script>
+
+
+    
+  </body>
 </html>
