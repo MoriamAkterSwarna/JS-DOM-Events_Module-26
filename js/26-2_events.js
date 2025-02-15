@@ -33,3 +33,8 @@ const makePurpleBtn =document.getElementById('make-purple');
        makePurpleBtn.onclick = function() {
            document.body.style.backgroundColor = 'purple';
        }
+
+
+
+
+    //    option: 4
