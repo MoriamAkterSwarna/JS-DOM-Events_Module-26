@@ -1,8 +1,15 @@
 // Code: 26-2_events.js
 
 // Option 1 - directly set on the HTML element
+{/* <button onclick="console.log(70)">Another Button</button> */}
+
+
 
 // Option 2 add onclick function 
+
+{/* <button onclick="makeRed()">Make Red</button> */}
+
+
         function makeRed() {
             document.body.style.backgroundColor = 'red';
         }
