@@ -6,6 +6,7 @@
 
 
 // Option 2 add onclick function 
+//* Important [We will use this version sometimes]
 
 {/* <button onclick="makeRed()">Make Red</button> */}
 
@@ -25,7 +26,7 @@ const makeBlueBtn = document.getElementById('make-blue');
             document.body.style.backgroundColor = 'blue';
         }
 
-// Option 3 - Version 2
+//* Option 3 - Version 2 
 
 const makePurpleBtn =document.getElementById('make-purple');
         console.log(makePurpleBtn);
@@ -36,5 +37,31 @@ const makePurpleBtn =document.getElementById('make-purple');
 
 
 
+    //? Video 26-3 Start Here    
+
 
     //    option: 4
+
+    const makePinkBtn = document.getElementById('make-pink');
+        console.log(makePinkBtn);
+
+        makePinkBtn.addEventListener('click', makePink);
+
+        function makePink() {
+            document.body.style.backgroundColor = 'pink';
+        }
+
+        // option : 4 another 
+
+        const makeGreenBtn = document.getElementById('make-green');
+        console.log(makeGreenBtn);
+
+        makeGreenBtn.addEventListener('click', function makeGreen() {
+            document.body.style.backgroundColor = 'green';
+        });
+
+        // option : 4 final
+//* Important [We will use this version sometimes] 
+        document.getElementById('make-orange').addEventListener('click', function() {
+            document.body.style.backgroundColor = 'orange';
+        });
